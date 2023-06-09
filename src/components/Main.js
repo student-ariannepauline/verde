@@ -46,7 +46,7 @@ class Main extends Component {
         </Row>
         </Container>
         <Container fluid>
-        <Row sm="6">
+        <Row>
             <Col
             >
                 <h2>Sell Energy</h2>
@@ -85,7 +85,6 @@ class Main extends Component {
                     </form>
                 </Col>
                 <Col
-            xs="6"
             >
             <h2>Demand Energy</h2>
         <form
@@ -139,10 +138,8 @@ class Main extends Component {
             <br></br>
             <br></br>
         </Row>
-        <Row xs="2">
-        <Col
-                xs="6"
-                >
+        <Row>
+        <Col>
                 <h2>Buy Energy</h2>
             <Table bordered>
                 <thead>
@@ -190,11 +187,9 @@ class Main extends Component {
             </Table>
             </Col>
             
-            <Col
-            xs="6"
-            >
+            <Col>
              <h2>Fulfill Energy Demand</h2>
-          <table className="table">
+          <Table bordered>
             <thead>
               <tr>
                 <th scope="col">#</th>
@@ -237,7 +232,7 @@ class Main extends Component {
                 );
               })}
             </tbody>
-          </table>
+          </Table>
             </Col>
         </Row>
         </Container>

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Card, CardBody, CardText, CardTitle, Progress } from 'reactstrap';
 import Web3 from 'web3';
 import Marketplace from '../abis/Marketplace.json';
 import Navbar from './Navbar';
@@ -14,6 +13,7 @@ class App extends Component {
       energies: [],
       demandCount: 0,
       energyDemands: [],
+      // userEnergy: 0,
       totalEnergy: 170,
       loading: true,
     };
@@ -115,6 +115,19 @@ class App extends Component {
       });
   }
 
+  // componentDidMount() {
+  //   this.calculateUserEnergy();
+  // }
+
+  // calculateUserEnergy() {
+  //   const { totalEnergy, quantity } = this.state;
+  //   const userEnergy = totalEnergy - quantity;
+  //   this.setState({ userEnergy });
+  // }
+
+
+
+
   render() {
     return (
       <div>
@@ -129,6 +142,7 @@ class App extends Component {
                 </div>
               ) : (
                 <Main
+                // userEnergy={this.state.userEnergy}
                 totalEnergy={this.state.totalEnergy}
                 account={this.state.account}
                   energies={this.state.energies}
